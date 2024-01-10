@@ -7,17 +7,14 @@ from nltk.tokenize import word_tokenize
 import os
 import shutil
 import pickle
-from dotenv.main import load_dotenv, dotenv_values
-from flask import Flask, render_template, request,redirect, url_for,Blueprint,session
-from flask import jsonify,render_template,Blueprint
-from flask_cors import CORS
+
 from datetime import datetime
 import os
 from docx import Document
 
 import streamlit as st
 #from translate import translate_corpus
-load_dotenv()
+
 openai_api='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'
 doc_source = './Source_Documents'
 
