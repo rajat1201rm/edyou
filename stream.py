@@ -7,16 +7,16 @@ from nltk.tokenize import word_tokenize
 import os
 import shutil
 import pickle
-
+from dotenv.main import load_dotenv, dotenv_values
 from datetime import datetime
 import os
 from docx import Document
 
 import streamlit as st
 #from translate import translate_corpus
-
-openai_api='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'
-doc_source = './Source_Documents'
+load_dotenv()
+openai_api=os.getenv("OPENAI_API")
+doc_source = '/home/ubuntu/edyou/Source_Documents'
 
 
 def load_index():
