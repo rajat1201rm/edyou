@@ -188,7 +188,7 @@ def main():
     
 
     #with st.sidebar:
-    st.image('Images/vdoit_technologies_private_limited_logo.jpeg')
+    st.image('.vdoit_technologies_private_limited_logo.jpeg')
     st.header("TxtAI")
     st.text("Version Alpha")
     brain_name = st.text_input("Mention The Personality Name")
