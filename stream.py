@@ -18,8 +18,8 @@ from docx import Document
 import streamlit as st
 #from translate import translate_corpus
 load_dotenv()
-openai_api=os.getenv("OPENAI_API")
-doc_source = os.getenv("DOC_DIRECTORY")
+openai_api='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'
+doc_source = './Source_Documents'
 
 
 def load_index():
